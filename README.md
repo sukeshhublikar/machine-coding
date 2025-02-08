@@ -1,1 +1,1 @@
-# machin-coding
+# machine-coding
