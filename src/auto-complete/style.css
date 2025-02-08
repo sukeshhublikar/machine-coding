@@ -1,0 +1,59 @@
+.input-box {
+    border: 1px solid;
+    padding: 8px 8px;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    &:focus {
+        outline: none;
+    }
+}
+
+.autocomplete-container {
+    position: relative;
+}
+
+.dropdown {
+    margin-top: 2px;
+    position: absolute;
+    height: 250px;
+    border: 1px solid gray;
+    width: 100%;
+    border-radius: 4px;
+    padding: 4px 0px;
+    overflow-y: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.item {
+    cursor: pointer;
+    display: flex;
+    padding: 8px 8px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background: rgb(233, 232, 232);
+    }
+}
+
+.close-btn {
+    position: absolute;
+    background: white !important;
+    border: none;
+    right: 2px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.no-items {
+    padding: 16px 8px;
+    font-weight: 300;
+    color: grey;
+}

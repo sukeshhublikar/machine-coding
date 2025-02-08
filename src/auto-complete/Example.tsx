@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import AutoComplete from "./AutoComplete";
 import { useDebounce } from "../hooks/useDebounce";
 import { useFetch } from "../hooks/useFetch";
@@ -14,6 +14,10 @@ export function Example() {
   }, [debounceQuery]);
 
   const [data, loading, error] = useFetch(urlKey);
+
+  useEffect(() => {
+    setItems(data?.products || []);
+  }, [data]);
 
   return (
     <AutoComplete

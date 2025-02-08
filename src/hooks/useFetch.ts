@@ -6,18 +6,17 @@ export function useFetch(url: string) {
   const [error, setError] = useState<unknown | null>(null);
 
   const fetchCall = () => {
-    setLoading(true);
     try {
+      setLoading(true);
       fetch(url)
         .then((res) => res.json())
         .then((results) => {
           setData(results);
+          setLoading(false);
         });
     } catch (e: unknown) {
       setError(e);
       console.log(e);
-    } finally {
-      setLoading(false);
     }
   };
 
