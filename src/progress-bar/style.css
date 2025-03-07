@@ -1,0 +1,26 @@
+.progress-bar {
+    border: 1px solid green;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress {
+    width: 100%;
+    position: absolute;
+    border-radius: 20px;
+    background: linear-gradient(to right, #7fcbe9, #008064);
+    transition: 2s ease-in-out;
+    height: 40px;
+  }
+  
+  .toggle-progress-bar {
+    margin-top: 10px;
+    border-color: #008064;
+    color: #008064;
+    padding: 4px 8px;
+    background: transparent;
+    border-radius: 6px;
+  }
+  
