@@ -45,8 +45,6 @@
 .product-list {
   display: grid;
   gap: 20px;
-  width: 90%;
-  max-width: 1200px;
   grid-template-columns: 200px 200px 200px 200px;
 }
 .product-item {
@@ -55,5 +53,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  min-height: 80px;
+  min-height: 120px;
+  & img {
+    min-height: 80px;
+    max-height: 80px;
+  }
 }
