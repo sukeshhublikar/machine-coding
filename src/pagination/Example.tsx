@@ -5,6 +5,7 @@ import { useFetch } from "../hooks/useFetch";
 interface IProduct {
   title: string;
   id: number;
+  thumbnail: string;
 }
 
 const SIZE = 20;
@@ -36,6 +37,7 @@ export function Example() {
         {items?.map((product: IProduct) => {
           return (
             <div className="product-item" key={product.id}>
+              <img src={product.thumbnail} width={100} />
               <div>{product.title}</div>
             </div>
           );
