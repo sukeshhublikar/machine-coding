@@ -26,7 +26,7 @@ export function Example() {
   }
 
   return (
-    <div style={{ height: "calc(100%- 100px)" }}>
+    <div style={{ height: "calc(100%- 80px)" }}>
       <Pagination
         current={page}
         total={data?.total}
