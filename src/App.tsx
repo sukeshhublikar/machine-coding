@@ -1,5 +1,5 @@
 import "./App.css";
-import { Example } from "./progress-bar/Example";
+import { Example } from "./pagination/Example";
 
 function App() {
   return (

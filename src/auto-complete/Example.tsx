@@ -13,7 +13,7 @@ export function Example() {
     return `https://dummyjson.com/products/search?q=${query}`;
   }, [debounceQuery]);
 
-  const [data, loading, error] = useFetch(urlKey);
+  const { data, loading } = useFetch(urlKey);
 
   useEffect(() => {
     setItems(data?.products || []);

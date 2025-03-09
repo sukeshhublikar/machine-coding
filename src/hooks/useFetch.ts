@@ -24,5 +24,5 @@ export function useFetch(url: string) {
     fetchCall();
   }, [url]);
 
-  return [data, loading, error];
+  return {data, loading, error};
 }
